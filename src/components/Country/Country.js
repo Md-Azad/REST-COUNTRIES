@@ -4,7 +4,7 @@ import "./Country.css";
 const Country = (props) => {
   //   console.log(props.country);
   //   Objecty destructuring
-  const { name, region, population, area } = props.country;
+  const { name, region, population, area, flags } = props.country;
   return (
     <div className="country">
       {/* Without destructuring */}
@@ -14,8 +14,8 @@ const Country = (props) => {
       <p>Area: {props.country.area}</p> */}
 
       {/* with destructuring */}
-
-      <h3>Country Name: {name.common}</h3>
+      <img src={flags.png} alt="" />
+      <h3> {name.common}</h3>
       <p>Region: {region}</p>
       <p>Population: {population}</p>
       <p>Area: {area}</p>
