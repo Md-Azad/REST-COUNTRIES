@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>Let's Visit All countries of the world!!</h1>
+      <hr />
       <Countries></Countries>
     </div>
   );
