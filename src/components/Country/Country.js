@@ -2,7 +2,7 @@ import React from "react";
 import "./Country.css";
 
 const Country = (props) => {
-  console.log(props.country);
+  //   console.log(props.country);
   //   Objecty destructuring
   const { name, region, population, area } = props.country;
   return (
